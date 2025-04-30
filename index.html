@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>Anuj Sharma Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c3a404012c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="logo.png" alt="Portfolio Logo"></div>
+    <div class="nav-links" id="slide-menu">
+      <a href="#information">Home</a>
+      <a href="#about">About</a>
+      <a href="#ser-section">Service</a> 
+      <a href="#Myworks">Works</a>
+      <a href="#contact-container">Contact</a>
+      <i class="fa-solid fa-xmark " id="mark" onclick="closemenu()"></i>
+    </div>
+    <i class=" fa-solid fa-bars " id="mark" onclick="openmenu()"></i>
+  </nav>
+  <!-- ------------------------------home------------------- -->
+
+  <div id="information">
+    <div class="left">
+      Hi, my name is <span class="name">ANUJ</span> & I am a passionate<br>
+      <span id="element"></span>
+    </div>
+    <div class="right"></div>
+  </div>
+
+  <!------------------------------------------- About Section ------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="box1">
+        <img class="user" src="personal-portfolio-img/images/user.png" alt="Anuj Sharma">
+      </div>
+      <div class="box2">
+        <h1 class="aboutheading">About me</h1>
+        <p>Hello! I’m a passionate web development and programming enthusiast, always eager to learn new technologies
+          and improve my skills. Currently, I’m focused on creating responsive websites and learning backend development
+          to become a full-stack developer. I enjoy exploring tech trends, coding projects, and aim to build a
+          successful career in the software industry.
+        </p>
+
+        <div class="tabs">
+          <p class="tablink activelink" onclick="opentab(event, 'skills')">Skills</p>
+          <p class="tablink" onclick="opentab(event, 'Experience')">Experience</p>
+          <p class="tablink" onclick="opentab(event, 'education')">Education</p>
+        </div>
+
+        <div class="content active-tab" id="skills">
+          <ul>
+            <li><span class="head">Programming Languages</span><br>
+              C (complete), JavaScript (basics), Python (learning), HTML5, CSS3</li>
+            <li><span class="head">JavaScript</span><br>
+              Dynamic web pages, DOM manipulation, events</li>
+            <li><span class="head">Python</span><br>
+              (learning / planned for backend)</li>
+          </ul>
+        </div>
+
+        <div class="content" id="Experience">
+          <ul>
+            <li><span class="head">Personal Projects</span><br>
+              Portfolio website, dynamic web pages with JS</li>
+            <li><span class="head">College Projects</span><br>
+              Built a C-based project as part of curriculum</li>
+            <li><span class="head">Learning Phase</span><br>
+              Open-source and GitHub collaboration</li>
+          </ul>
+        </div>
+
+        <div class="content" id="education">
+          <ul>
+            <li>Scored 90% in 10th and 87% in 12th.</li>
+            <li>Currently pursuing BCA, passionate about coding.</li>
+            <li>Learning full-stack development and Python backend.</li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!--------------- -------services------------------------------- -->
+  <div id="ser-section">
+    <h1 class="nameser">Services</h1>
+    <div class="conatinergrid">
+
+      <!-- ---grid1---- -->
+      <div class="grid1 trans">
+        <i class="fa-solid fa-code  svgall  fa"></i>
+        <h2 class="headgri">Web Design</h2>
+        <p class="pargrid">"I design clean, modern, and fully responsive website layouts using HTML5 and CSS3. I focus
+          on creating visually appealing user interfaces that work seamlessly across all devices and screen sizes." </p>
+      </div>
+      <!-- -------grid2---- -->
+      <div class="grid2 trans">
+        <i class="fa-solid fa-laptop-code svgall fa"></i>
+        <h2 class="headgri">Frontend Development</h2>
+        <p class="pargrid">"I develop interactive and dynamic web pages using HTML, CSS, and JavaScript. I focus on
+          building smooth user experiences with clean, well-structured code and modern UI animations."</p>
+
+      </div>
+
+      <!-- --------grid3--------- -->
+      <div class="grid3 trans">
+
+        <i class="fa-solid fa-code-pull-request svgall  fa"></i>
+        <h2 class="headgri">Backend Development (Learning)</h2>
+        <p class="pargrid">"Currently exploring backend development with Python, learning how to manage databases,
+          create APIs, and build secure, scalable web applications to become a full-stack developer."</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ------------------------------portfolio--------------------------- -->
+
+
+  <div id="Myworks">
+    <h1 class="portfolioheader">
+      My portfolio
+    </h1>
+    <div class="web-list">
+      <div class="app"><img class="work" src="personal-portfolio-img/images/work-1.png" alt="logo">
+
+        <div class="layer">
+          <h3 class="portfolio-title">Personal Portfolio Website</h3>
+          <p class="portfolio-desc">A fully responsive personal portfolio site built with HTML, CSS, and JavaScript,
+            showcasing my skills, projects, and services with smooth animations and a modern layout.</p>
+
+          <a href="http://127.0.0.1:3000/"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+
+
+      </div>
+      <div class="app">
+        <img class="work" src="personal-portfolio-img/images/work-2.png" alt="logo">
+
+        <div class="layer">
+          <h3 class="portfolio-title">Landing Page Design</h3>
+          <p class="portfolio-desc">A clean and minimal landing page for a mock product using HTML and CSS. Focused on
+            simplicity, CTA buttons, and user-friendly navigation for better user engagement.</p>
+
+          <a href="/"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+        </div>
+        </img>
+
+      </div>
+      <div class="app"><img class="work" src="personal-portfolio-img/images/work-3.png" alt="logo">
+        <div class="layer">
+          <h3 class="portfolio-title">Interactive JavaScript Game</h3>
+          <p class="portfolio-desc">A fun browser-based game built with JavaScript and DOM manipulation techniques,
+            featuring responsive controls and dynamic UI effects for a better gaming experience.</p>
+          <a href="/"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- --------------------------contact-me----------------------------------------------------- -->
+
+  <div id="contact-container">
+    <div class="rows" width="320" hei>
+      <!-- ----------------left section   -------------- -->
+      <div class="left-rows">
+        <h1>Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>Anujsharma32341@gmail.com</p>
+        <div class="social-platform">
+
+          <a href="/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/_anuj_sharma63?igsh=c3RnMjI4cnRpcnFl"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/anuj-sharma6-b10575361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+        <button class="resume">Dowload-cv <i class="fa-solid fa-download"></i></button>
+      </div>
+
+      <!-- ----------------------right section------------------ -->
+      <div class="right-rows">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="enter your name" required>
+          <input type="email" name="Email" placeholder="enter valid email" required>
+          <textarea name="Comment" id="" rows="5" required></textarea>
+          <button class="lastbtn">Submit</button>
+        </form>
+
+        <div class="lastmsg" id="messageBox">Message will appear here</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ----------------------------copyright.llc------------- -->
+
+  <footer class="site-footer">
+    <p class="copyright">&copy; 2025 Anuj Sharma <i class="fa-solid fa-heart"></i> Designed & Developed by Anuj Sharma.
+      All rights reserved.</p>
+  </footer>
+
+
+  <!---------------------------- JavaScript Code ------------------------------->
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['web-developer', 'designer', 'full-stack developer'],
+      typeSpeed: 50,
+      loop: true
+    }); 
+
+    var tablinks = document.getElementsByClassName("tablink")
+    var contents = document.getElementsByClassName("content")
+
+    function opentab(evt, tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("activelink")
+      }
+      for (content of contents) {
+        content.classList.remove("active-tab")
+      }
+      document.getElementById(tabname).classList.add("active-tab")
+      evt.currentTarget.classList.add("activelink")
+    }
+
+     var slidemenu = document.getElementById("slide-menu");
+
+     function openmenu(){
+      slidemenu.style.right="0"
+     }
+     function closemenu(){
+      slidemenu.style.right="-200px"
+     }
+
+
+
+
+    
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxS5h_QHl_ii2ls7Xdkfweialqb9zKxmWG8qFjwAp8bTi05LZP_-kkJntnYqDkDZ_S2lg/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('messageBox');
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      msg.style.display = 'block';
+      msg.style.backgroundColor = '#ffc107'; // Yellow for "sending..."
+      msg.innerHTML = "Sending message...";
+  
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.style.backgroundColor = '#28a745'; // Green
+          msg.innerHTML = "✅ Message sent successfully!";
+          setTimeout(() => {
+            msg.style.display = 'none';
+            msg.innerHTML = "";
+          }, 4000);
+          form.reset();
+        })
+        .catch(error => {
+          msg.style.backgroundColor = '#dc3545'; // Red
+          msg.innerHTML = "❌ Failed to send. Try again.";
+          setTimeout(() => {
+            msg.style.display = 'none';
+            msg.innerHTML = "";
+          }, 4000);
+        });
+    });
+  </script>
+  
+
+
+
+
+</body>
+
+</html>
