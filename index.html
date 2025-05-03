@@ -18,7 +18,7 @@
     <div class="nav-links" id="slide-menu">
       <a href="#information">Home</a>
       <a href="#about">About</a>
-      <a href="#ser-section">Service</a> 
+      <a href="#ser-section">Service</a>
       <a href="#Myworks">Works</a>
       <a href="#contact-container">Contact</a>
       <i class="fa-solid fa-xmark " id="mark" onclick="closemenu()"></i>
@@ -39,7 +39,8 @@
   <div id="about">
     <div class="container">
       <div class="box1">
-        <img class="user" src="personal-portfolio-img/images/user.png" alt="Anuj Sharma">
+        <img class="user" src="personal-portfolio-img/images/WhatsApp Image 2025-05-03 at 15.49.43_c84ba3bc.jpg"
+          alt="Anuj Sharma">
       </div>
       <div class="box2">
         <h1 class="aboutheading">About me</h1>
@@ -184,8 +185,11 @@
         <div class="social-platform">
 
           <a href="/"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/_anuj_sharma63?igsh=c3RnMjI4cnRpcnFl"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/anuj-sharma6-b10575361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/_anuj_sharma63?igsh=c3RnMjI4cnRpcnFl"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a
+            href="https://www.linkedin.com/in/anuj-sharma6-b10575361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+              class="fa-brands fa-linkedin"></i></a>
 
         </div>
         <button class="resume">Dowload-cv <i class="fa-solid fa-download"></i></button>
@@ -217,13 +221,13 @@
 
 
   <!---------------------------- JavaScript Code ------------------------------->
-   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#element', {
       strings: ['web-developer', 'designer', 'full-stack developer'],
       typeSpeed: 50,
       loop: true
-    }); 
+    });
 
     var tablinks = document.getElementsByClassName("tablink")
     var contents = document.getElementsByClassName("content")
@@ -239,31 +243,31 @@
       evt.currentTarget.classList.add("activelink")
     }
 
-     var slidemenu = document.getElementById("slide-menu");
+    var slidemenu = document.getElementById("slide-menu");
 
-     function openmenu(){
-      slidemenu.style.right="0"
-     }
-     function closemenu(){
-      slidemenu.style.right="-200px"
-     }
-
-
+    function openmenu() {
+      slidemenu.style.right = "0"
+    }
+    function closemenu() {
+      slidemenu.style.right = "-200px"
+    }
 
 
-    
+
+
+
   </script>
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxS5h_QHl_ii2ls7Xdkfweialqb9zKxmWG8qFjwAp8bTi05LZP_-kkJntnYqDkDZ_S2lg/exec';
     const form = document.forms['submit-to-google-sheet'];
     const msg = document.getElementById('messageBox');
-  
+
     form.addEventListener('submit', e => {
       e.preventDefault();
       msg.style.display = 'block';
       msg.style.backgroundColor = '#ffc107'; // Yellow for "sending..."
       msg.innerHTML = "Sending message...";
-  
+
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
           msg.style.backgroundColor = '#28a745'; // Green
@@ -284,7 +288,7 @@
         });
     });
   </script>
-  
+
 
 
 
